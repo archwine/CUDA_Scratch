@@ -1,6 +1,4 @@
 
-## 联系我
-![](./IMG_9066.JPG)
 ## 博客
 具体内容可以访问博客：
 - [0.0 腾讯云CUDA环境搭建](http://www.face2ai.com/CUDA-F-0-0-Tencent-GPU-Cloud/)
