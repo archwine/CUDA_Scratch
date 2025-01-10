@@ -1,1 +1,6 @@
+cmake_minimum_required(VERSION 3.18)
+set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
+project(sum_arrays_timer CUDA)
 add_executable(sum_arrays_timer sum_arrays_timer.cu)
+target_include_directories(sum_arrays_timer PRIVATE ${CMAKE_SOURCE_DIR}/../include)
+target_link_libraries(sum_arrays_timer cudart)

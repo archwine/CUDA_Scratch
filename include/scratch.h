@@ -1,5 +1,5 @@
-#ifndef FRESHMAN_H
-#define FRESHMAN_H
+#ifndef SCRATCH_H
+#define SCRATCH_H
 #define CHECK(call)\
 {\
   const cudaError_t error=call;\
@@ -101,4 +101,4 @@ void checkResult(float * hostRef,float * gpuRef,const int N)
   }
   printf("Check result success!\n");
 }
-#endif//FRESHMAN_H
+#endif//SCRATCH_H
