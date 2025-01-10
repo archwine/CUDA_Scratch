@@ -19,6 +19,6 @@ int main(int argc,char ** argv)
   grid.x=(nElem-1)/block.x+1;
   printf("grid.x %d block.x %d\n",grid.x,block.x);
 
-  cudaDeviceReset();
+  cudaDeviceSynchronize();
   return 0;
 }

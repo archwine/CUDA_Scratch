@@ -1,1 +1,6 @@
+cmake_minimum_required(VERSION 3.18)
+set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
+project(grid_block LANGUAGES CXX CUDA)
+set(CMAKE_CUDA_ARCHITECTURES 60 70 75 80 86)
 add_executable(grid_block grid_block.cu)
+target_link_libraries(grid_block cudart)
