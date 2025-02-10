@@ -1,3 +1,4 @@
+set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
 cmake_minimum_required(VERSION 3.18)
 project(reduce_v0 LANGUAGES CXX CUDA)
 set(CMAKE_CUDA_ARCHITECTURES 89) 
