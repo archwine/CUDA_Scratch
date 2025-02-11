@@ -26,5 +26,15 @@ int main() {
         std::cout << "  Register Per Multiprocessor: " << deviceProp.regsPerMultiprocessor << std::endl;
         std::cout << "  Shared Memory per Block Optin: " << deviceProp.sharedMemPerBlockOptin << " bytes" << std::endl;
         std::cout << "  Shared Memory per Multiprocessor: " << deviceProp.sharedMemPerMultiprocessor << " bytes" << std::endl;
+
+	std::cout << " ====== ====== ====== ====== ====== ====== ====== ====== ======" << std::endl;
+
+	int blockLimitSM;
+    	cudaDeviceGetAttribute(&blockLimitSM, cudaDevAttrMaxBlocksPerMultiprocessor, i);
+	std::cout << "  Block Limit SM: " << blockLimitSM << std::endl;
+
+	int theoreticalActiveWarpsPerSM = deviceProp.maxThreadsPerMultiProcessor / deviceProp.warpSize;
+	std::cout << "  Theoretical Active Warps per SM: " << theoreticalActiveWarpsPerSM << std::endl;
+
     }
 }
